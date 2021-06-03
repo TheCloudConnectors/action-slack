@@ -1,11 +1,13 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Slack Message'
+description: 'Send slack notification in a channel'
+author: 'The Cloud Connectors'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  status:
+    description: 'the build status'
+    default: 'success'
+  template:
+    description: 'the template to use'
+    default: 'build_status'
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: node12
+  main: dist/index.js
