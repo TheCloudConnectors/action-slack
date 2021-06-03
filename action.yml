@@ -1,0 +1,11 @@
+name: 'Slack Message'
+description: 'Send slack notification in a channel'
+author: 'The Cloud Connectors'
+inputs:
+  status:
+    required: true
+    description: 'the build status'
+    default: 'success'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
