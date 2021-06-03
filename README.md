@@ -15,7 +15,7 @@ $ npm run build && npm run package
 ## Publish
 
 ```bash
-yarn build
+yarn package
 git ci -am "v1"
 git tag -a -m "Release notes" v1
 git push --follow-tags
